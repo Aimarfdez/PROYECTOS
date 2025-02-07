@@ -1,0 +1,107 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E7F0F8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #839DD1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Estilo para la tabla del horario */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+th, td {
+    padding: 20px;
+    border: 2px solid #4A5989;
+}
+
+thead th {
+    background-color: #6374AE;
+    color: white;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+tbody td {
+    background-color: #D3E2F2;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #E7F0F8;
+}
+
+tbody tr:nth-child(4) td {
+    background-color: #4A5989;
+    color: white;
+    font-weight: bold;
+}
+
+/* Colores personalizados para cada asignatura */
+.teatro {
+    background-color: #B9CFE8;
+    color: #4A5989;
+}
+
+.canto {
+    background-color: #9C86DD;
+    color: white;
+}
+
+.baile {
+    background-color: #6A7FC1;
+    color: white;
+}
+
+.cine {
+    background-color: #4A5989;
+    color: white;
+}
+
+.juegos {
+    background-color: #839DD1;
+    color: white;
+}
+
+.reunion {
+    background-color: #414E6E;
+    color: white;
+}
+
+/* Estilo para la fila de descanso */
+.descanso {
+    background-color: #4A5989;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+/* Ajustes de tamaño */
+td, th {
+    height: 80px; /* Incrementa el tamaño de las celdas */
+}
+
+/* Estilo para caption */
+caption {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4A5989;
+}

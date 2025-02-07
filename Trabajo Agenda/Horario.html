@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+    <style>
+        /* Estilo básico para la tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #839DD1;
+            color: white;
+        }
+        td {
+            cursor: pointer;
+            background-color: #B9CFE8;
+            color: white;
+            font-weight: bold;
+        }
+        /* Estilo para la caja de información emergente */
+        .info-box {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+        .info-box h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Horario</h1>
+
+<table>
+    <tr>
+        <th>HORA</th>
+        <th>LUNES</th>
+        <th>MARTES</th>
+        <th>MIÉRCOLES</th>
+        <th>JUEVES</th>
+        <th>VIERNES</th>
+    </tr>
+    <tr>
+        <td>8:30-9:20</td>
+        <td rowspan="2" onclick="mostrarInfo('disenio')">DisDeIntWeb</td>
+        <td rowspan="2" onclick="mostrarInfo('despliegue')">DesDeAplWeb</td>
+        <td rowspan="2" onclick="mostrarInfo('cliente')">DesWebEnEntCli</td>
+        <td rowspan="2" onclick="mostrarInfo('disenio')">DisDeIntWeb</td>
+        <td rowspan="2" onclick="mostrarInfo('servidor')">DesWebEnEntSe</td>
+    </tr>
+    <tr>
+        <td>9:25-10:15</td>
+    </tr>   
+    <tr>
+        <td>10:20-11:10</td>
+        <td onclick="mostrarInfo('servidor')">DesWebEnEntSe</td>
+        <td onclick="mostrarInfo('empresa')">EmpEIniEmp</td>
+        <td onclick="mostrarInfo('disenio')">DisDeIntWeb</td>
+        <td rowspan="2" onclick="mostrarInfo('despliegue')">DesDeAplWeb</td>
+        <td onclick="mostrarInfo('cliente')">DesWebEnEntCli</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="5" style="background-color: #6A7FC1; color: white;">DESCANSO</td>
+    </tr> 
+    <tr>
+        <td>11:40-12:30</td>
+        <td onclick="mostrarInfo('servidor')">DesWebEnEntSe</td>
+        <td onclick="mostrarInfo('ingles')">IngTécParGraSup</td>
+        <td onclick="mostrarInfo('disenio')">DisDeIntWeb</td>
+        <td onclick="mostrarInfo('despliegue')">DesDeAplWeb</td>
+        <td onclick="mostrarInfo('cliente')">DesWebEnEntCli</td>
+    </tr>
+    <tr>
+        <td>12:30-13:25</td>
+        <td rowspan="2" onclick="mostrarInfo('cliente')">DesWebEnEntCli</td>
+        <td rowspan="2" onclick="mostrarInfo('servidor')">DesWebEnEntSe</td>
+        <td rowspan="2" onclick="mostrarInfo('servidor')">DesWebEnEntSe</td>
+        <td rowspan="2" onclick="mostrarInfo('empresa')">EmpEIniEmp</td>
+        <td rowspan="2" onclick="mostrarInfo('despliegue')">DesDeAplWeb</td>
+    </tr>
+    <tr>
+        <td>13:30-14:20</td>
+    </tr>
+</table>
+
+<!-- Información emergente -->
+<div id="empresa" class="info-box">
+    <h3>Empresa e Iniciativa Emprendedora</h3>
+    <p><strong>Profesora:</strong> Pilar Álvarez</p>
+    <p>Esta asignatura te introduce en los principios fundamentales de la creación y gestión de una empresa, ayudándote a desarrollar una visión emprendedora.</p>
+</div>
+
+<div id="disenio" class="info-box">
+    <h3>Diseño de Interfaces Web</h3>
+    <p><strong>Profesora:</strong> Carmen Armijo</p>
+    <p>En esta asignatura aprenderás a diseñar interfaces de usuario intuitivas y atractivas para aplicaciones y sitios web, centrándote en la experiencia del usuario.</p>
+</div>
+
+<div id="cliente" class="info-box">
+    <h3>Desarrollo de Aplicaciones Web en Entorno Cliente</h3>
+    <p><strong>Profesor:</strong> Miguel Ángel</p>
+    <p>Enfocada en el desarrollo de aplicaciones del lado del cliente, esta asignatura se centra en tecnologías como HTML, CSS y JavaScript.</p>
+</div>
+
+<div id="servidor" class="info-box">
+    <h3>Desarrollo de Aplicaciones Web en Entorno Servidor</h3>
+    <p><strong>Profesor:</strong> Alberto López</p>
+    <p>Aquí aprenderás a manejar el desarrollo de aplicaciones web desde el lado del servidor, usando tecnologías como PHP, Node.js, y bases de datos.</p>
+</div>
+
+<div id="ingles" class="info-box">
+    <h3>Inglés Técnico para Grado Superior</h3>
+    <p><strong>Profesora:</strong> Elena Menchero</p>
+    <p>Esta asignatura te ayuda a adquirir las competencias necesarias en el idioma inglés, enfocadas en terminología técnica y profesional.</p>
+</div>
+
+<div id="despliegue" class="info-box">
+    <h3>Despliegue de Aplicaciones Web</h3>
+    <p><strong>Profesora:</strong> María Leticia Riaza</p>
+    <p>Aprenderás a desplegar y configurar aplicaciones web en servidores, asegurando su funcionamiento eficiente y seguro.</p>
+</div>
+
+<script>
+    function mostrarInfo(asignatura) {
+        // Oculta todas las cajas de información
+        var cajas = document.getElementsByClassName('info-box');
+        for (var i = 0; i < cajas.length; i++) {
+            cajas[i].style.display = 'none';
+        }
+
+        // Muestra la caja correspondiente a la asignatura clicada
+        document.getElementById(asignatura).style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

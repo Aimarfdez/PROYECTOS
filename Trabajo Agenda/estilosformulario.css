@@ -1,0 +1,87 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E7F0F8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #839DD1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1.2em;
+    color: #4A5989;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #839DD1;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    background-color: #F0F4FA;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4A5989;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4A5989;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #839DD1;
+}
+
+/* Ajuste de la caja del formulario */
+.container {
+    max-width: 600px;
+    padding: 40px;
+    background-color: #F0F4FA;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #839DD1;
+}
