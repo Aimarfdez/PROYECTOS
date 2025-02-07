@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elementos de Bootstrap 5</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="estilos.css" rel="stylesheet">
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-offset="50">
+       
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                
+                <button class="btn btn-outline-light me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                    Menú
+                </button>
+    
+               
+                <a class="navbar-brand" href="#">
+                    <img src="/imagenes/bootstrap.svg" alt="Bootstrap Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    Elementos de Bootstrap 5
+                </a>
+            </div>
+        </nav>
+    
+        
+        <div class="offcanvas offcanvas-start" id="offcanvasMenu">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menú</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="tables">BS5 Tables</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="forms">BS5 Forms</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="dropdowns">BS5 Dropdowns</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="flex">BS5 Flex</button>
+                        
+                    
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="inputGroups">BS5 Input Groups</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="badges">BS5 Badges</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="buttons">BS5 Buttons</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="selectMenus">BS5 Select Menus</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="tooltip">BS5 Tool Tip</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="carousel">BS5 Input Carousel</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="progressBar">BS5 Progress Bar</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="range">BS5 Input Range</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="images">BS5 Input Images</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="cards">BS5 Cards</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="toast">BS5 Toast</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="buttonGroups">BS5 Button Groups</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="darkMode">BS5 Dark Mode</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="spinners">BS5 Spinners </button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="alerts">BS5 Alerts</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="navBar">BS5 NavBar</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="modal">BS5 Modal</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="scrollSpy">BS5 Scroll Spy</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="listGroups">BS5 List Groups</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="formValidation">BS5 Form Validation</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="utilities">BS5 Utilities</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="pagination">BS5 Pagination</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="popover">BS5 Popover</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="floatingLabels">BS5 Floating Labels</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-primary w-100 text-start menu-item" data-target="checksRadios">BS5 Checks and Radios</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+       
+        <div class="container mt-4" id="dynamic-description">
+            <div class="alert alert-info text-center">
+                <h4>Bienvenido a Elementos de Bootstrap 5</h4>
+                <p>Explora y aprende sobre los elementos más importantes de Bootstrap, incluyendo tablas, formularios, dropdowns y el sistema de diseño flex. Usa el menú para navegar entre los elementos.</p>
+            </div>
+        </div>
+        <section class="py-5 bg-light">
+            <div class="container text-center">
+              <h2 class="mb-4">Descubre más funcionalidades</h2>
+              <div class="row">
+              
+                <div class="col-md-4">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      
+                      <div class="flip-card-front">
+                        <i class="fas fa-table fa-2x text-primary mb-3"></i>
+                        <h5 class="card-title">Tablas Dinámicas</h5>
+                        <p class="card-text">Crea tablas dinámicas y personalizables con Bootstrap y complementos avanzados.</p>
+                      </div>
+                     
+                      <div class="flip-card-back">
+                        <img src="/imagenes/tablasdinamicas.jpg" alt="Descripción de la imagen" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                            
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             
+                <div class="col-md-4">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <i class="fas fa-chart-line fa-2x text-success mb-3"></i>
+                        <h5 class="card-title">Gráficos Interactivos</h5>
+                        <p class="card-text">Implementa gráficos interactivos con librerías compatibles con Bootstrap.</p>
+                      </div>
+                      <div class="flip-card-back">
+                        <img src="/imagenes/graficos.png" alt="Descripción de la imagen" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col-md-4">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <i class="fas fa-puzzle-piece fa-2x text-danger mb-3"></i>
+                        <h5 class="card-title">Diseños Flexibles</h5>
+                        <p class="card-text">Utiliza el sistema flexbox para crear diseños adaptables y modernos.</p>
+                      </div>
+                      <div class="flip-card-back">
+                        <img src="/imagenes/flex.webp" alt="Descripción de la imagen" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+    <div class="container" id="mainContent">
+        <!-- Tables Section -->
+        <div id="tables" class="content-section">
+            <h2 class="section-title">BS5 Tables</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Objetivo del elemento</h4>
+                    <p>Las tablas en Bootstrap 5 permiten organizar datos de manera estructurada y estilizada, con opciones para ordenamiento, paginación y responsive design.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Ejemplo práctico</h4>
+                    <div class="example-box">
+                        <table class="table table-hover table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Stock</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Laptop Pro</td>
+                                    <td>$999</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>Smart Watch</td>
+                                    <td>$299</td>
+                                    <td>25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forms Section -->
+        <div id="forms" class="content-section">
+            <h2 class="section-title">BS5 Forms</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Objetivo del elemento</h4>
+                    <p>Los formularios en Bootstrap 5 proporcionan una manera estructurada y estilizada de recopilar datos del usuario con validación incorporada.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Ejemplo práctico</h4>
+                    <div class="example-box">
+                        <form class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label class="form-label">Nombre</label>
+                                <input type="text" class="form-control" required>
+                                <div class="valid-feedback">¡Correcto!</div>
+                                <div class="invalid-feedback">Por favor, ingrese su nombre</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" required>
+                                <div class="invalid-feedback">Por favor, ingrese un email válido</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dropdowns Section -->
+        <div id="dropdowns" class="content-section">
+            <h2 class="section-title">BS5 Dropdowns</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Objetivo del elemento</h4>
+                    <p>Los dropdowns proporcionan menús desplegables interactivos para mostrar listas de enlaces u opciones de manera organizada.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Ejemplo práctico</h4>
+                    <div class="example-box">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Menú desplegable
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                                <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flex Section -->
+        <div id="flex" class="content-section">
+            <h2 class="section-title">BS5 Flex</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Objetivo del elemento</h4>
+                    <p>El sistema Flex de Bootstrap 5 permite crear diseños flexibles y responsivos con control preciso sobre la alineación y distribución de elementos.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Ejemplo práctico</h4>
+                    <div class="example-box">
+                        <div class="d-flex justify-content-between align-items-center p-3 bg-light">
+                            <div class="p-2 bg-primary text-white">Flex item 1</div>
+                            <div class="p-2 bg-success text-white">Flex item 2</div>
+                            <div class="p-2 bg-info text-white">Flex item 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!-- Input Groups Section -->
+<div id="inputGroups" class="content-section">
+    <h2 class="section-title">BS5 Input Groups</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Los Input Groups permiten combinar campos de entrada con elementos adicionales como texto, botones e iconos, mejorando la interacción y contexto del formulario.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="Username">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Cantidad">
+                    <span class="input-group-text">€</span>
+                </div>
+
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary" type="button">Buscar</button>
+                    <input type="text" class="form-control" placeholder="Búsqueda...">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">Comentario</span>
+                    <textarea class="form-control" aria-label="Comentario"></textarea>
+                    <button class="btn btn-primary" type="button">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            <!-- Badges Section -->
+<div id="badges" class="content-section">
+    <h2 class="section-title">BS5 Badges</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Los badges proporcionan etiquetas pequeñas para mostrar información adicional o estados.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <h5>Notificaciones <span class="badge bg-secondary">New</span></h5>
+                <button class="btn btn-primary">
+                    Messages <span class="badge bg-light text-dark">4</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Buttons Section -->
+<div id="buttons" class="content-section">
+    <h2 class="section-title">BS5 Buttons</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Los botones permiten la interacción del usuario y acciones en la interfaz.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <button class="btn btn-primary me-2">Primary</button>
+                <button class="btn btn-success me-2">Success</button>
+                <button class="btn btn-danger">Danger</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Select Menus Section -->
+<div id="selectMenus" class="content-section">
+    <h2 class="section-title">BS5 Select Menus</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Los select menus permiten al usuario elegir una opción de una lista desplegable.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <select class="form-select mb-3">
+                    <option selected>Selecciona una opción</option>
+                    <option value="1">Opción 1</option>
+                    <option value="2">Opción 2</option>
+                    <option value="3">Opción 3</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tooltip Section -->
+<div id="tooltip" class="content-section"> 
+    <h2 class="section-title">BS5 Tooltip</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Los tooltips muestran información adicional cuando el usuario pasa el cursor sobre un elemento.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <button class="btn btn-secondary" 
+                        data-bs-toggle="tooltip" 
+                        title="Información adicional aquí">
+                    Hover sobre mí
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Carousel Section -->
+<div id="carousel" class="content-section">
+    <h2 class="section-title">BS5 Carousel</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>El carousel permite mostrar contenido en un slider interactivo.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <div id="demoCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/imagenes/carousel1.jpg" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/imagenes/carousel2.jpg" class="d-block w-100" alt="Slide 2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demoCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demoCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Progress Bar Section -->
+<div id="progressBar" class="content-section">
+    <h2 class="section-title">BS5 Progress Bar</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Las barras de progreso muestran el avance de una tarea o proceso.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 75%">75%</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%">
+                        50%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Range Section -->
+<div id="range" class="content-section">
+    <h2 class="section-title">BS5 Range</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Los controles range permiten seleccionar un valor dentro de un rango definido.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <label class="form-label">Ejemplo de Range</label>
+                <input type="range" class="form-range" min="0" max="100" step="10">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Images Section -->
+<div id="images" class="content-section">
+    <h2 class="section-title">BS5 Images</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Las imágenes responsivas se adaptan al contenedor y mantienen las proporciones.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <img src="carousel1.jpg" class="img-fluid rounded" alt="Responsive image">
+                <img src="carousel2.jpg" class="img-thumbnail mt-3" alt="Thumbnail">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cards Section -->
+<div id="cards" class="content-section">
+    <h2 class="section-title">BS5 Cards</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Las cards organizan contenido en contenedores flexibles y estilizados.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <div class="card">
+                    <img src="tablasdinamicas.jpg" class="card-img-top" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Tablas Dinámicas</h5>
+                        
+                        <a href="#" class="btn btn-primary">Botón</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Toast Section -->
+<div id="toast" class="content-section">
+    <h2 class="section-title">BS5 Toast</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Objetivo del elemento</h4>
+                <p>Los toasts muestran notificaciones temporales.</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Ejemplo práctico</h4>
+                <div class="example-box">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="toast" data-bs-target="#liveToast">
+                        Mostrar Toast
+                    </button>
+
+                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <strong class="me-auto">Notificación</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                                ¡Mensaje de ejemplo!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- Button Groups Section -->
+<div id="buttonGroups" class="content-section">
+    <h2 class="section-title">BS5 Button Groups</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Los grupos de botones combinan botones relacionados en una sola línea.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Left</button>
+                    <button type="button" class="btn btn-primary">Middle</button>
+                    <button type="button" class="btn btn-primary">Right</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Dark Mode Section -->
+<div id="darkMode" class="content-section">
+    <h2 class="section-title">BS5 Dark Mode</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>El modo oscuro ofrece una alternativa visual para mejor visibilidad en entornos oscuros.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+                    <label class="form-check-label" for="darkModeSwitch">Activar modo oscuro</label>
+                </div>
+                <div class="p-3 bg-dark text-light mt-3">
+                    Ejemplo de contenido en modo oscuro
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Spinners Section -->
+<div id="spinners" class="content-section">
+    <h2 class="section-title">BS5 Spinners</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Los spinners indican estados de carga y procesos en curso.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <div class="spinner-border text-primary me-2"></div>
+                <div class="spinner-grow text-danger"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Alerts Section -->
+<div id="alerts" class="content-section">
+    <h2 class="section-title">BS5 Alerts</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Las alertas proporcionan mensajes de retroalimentación contextual.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <div class="alert alert-success alert-dismissible fade show">
+                    ¡Operación exitosa!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+                <div class="alert alert-danger">
+                    ¡Error en la operación!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div id="navBar" class="content-section">
+        <div class="col-12">
+             <!-- Objetivo -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h4>Objetivo del elemento</h4>
+            <p>Una navbar en Bootstrap es un componente de navegación adaptativo que permite crear un encabezado de navegación adaptativo. </p>
+        </div>
+    </div>
+
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <!-- Navbar -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                    <div class="container-fluid">
+                        <!-- Logo y Marca -->
+                        <a class="navbar-brand" href="#">
+                            <i class="fas fa-code"></i>
+                            Aimar
+                        </a>
+
+                        <!-- Botón hamburguesa para móvil -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Contenido del navbar -->
+                        <div class="collapse navbar-collapse" id="navbarExample">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Proyectos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                        Servicios
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Desarrollo Web</a></li>
+                                        <li><a class="dropdown-item" href="#">Diseño UI/UX</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Consultoría</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- Formulario de búsqueda -->
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar...">
+                                <button class="btn btn-outline-light" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Section -->
+<div id="modal" class="content-section">
+    <h2 class="section-title">BS5 Modal</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Los modales muestran contenido en ventanas emergentes.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#demoModal">
+                    Abrir Modal
+                </button>
+                
+                <div class="modal fade" id="demoModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Título del Modal</h5>
+                                <button class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Contenido del modal
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ScrollSpy Section -->
+<div id="scrollspy" class="content-section">
+    <h2 class="section-title">BS5 ScrollSpy</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>ScrollSpy actualiza la navegación basada en la posición del scroll.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <nav id="navbar-example" class="navbar navbar-light bg-light px-3">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading1">Sección 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading2">Sección 2</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example" style="height: 200px; overflow-y: scroll;">
+                    <h4 id="scrollspyHeading1">Sección 1</h4>
+                    <p>Contenido de la sección 1...</p>
+                    <h4 id="scrollspyHeading2">Sección 2</h4>
+                    <p>Contenido de la sección 2...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- List Groups Section -->
+<div id="listGroups" class="content-section">
+    <h2 class="section-title">BS5 List Groups</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Los grupos de lista muestran series de contenido.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Item activo</a>
+                    <a href="#" class="list-group-item list-group-item-action">Segundo item</a>
+                    <a href="#" class="list-group-item list-group-item-action">Tercer item</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Form Validation Section -->
+<div id="formValidation" class="content-section">
+    <h2 class="section-title">BS5 Form Validation</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>La validación de formularios proporciona feedback sobre la entrada de datos.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <form class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" required placeholder="Email">
+                        <div class="invalid-feedback">
+                            Por favor ingrese un email válido
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Utilities Section -->
+<div id="utilities" class="content-section">
+    <h2 class="section-title">BS5 Utilities</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Las utilidades proporcionan clases auxiliares para espaciado, color, display y más.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <div class="p-3 mb-2 bg-primary text-white">Padding y color</div>
+                <div class="mt-3 border rounded">Margin y bordes</div>
+                <div class="d-flex justify-content-between mt-3">
+                    <span class="text-success">Texto color</span>
+                    <span class="fw-bold">Texto bold</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pagination Section -->
+<div id="pagination" class="content-section">
+    <h2 class="section-title">BS5 Pagination</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>La paginación indica secuencia de páginas relacionadas.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="popover" class="content-section">
+    <h2 class="section-title">BS5 Popover</h2>
+    
+    <!-- Objetivo -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h4>Objetivo del elemento</h4>
+            <p>Los popovers son ventanas emergentes que muestran información adicional al interactuar con un elemento, útiles para proporcionar ayuda o detalles extra sin sobrecargar la interfaz.</p>
+        </div>
+    </div>
+
+    <!-- Ejemplo Práctico -->
+    <div class="row">
+        <div class="col-12">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box p-4 text-center">
+                <button type="button" 
+                        class="btn btn-primary me-2" 
+                        data-bs-toggle="popover" 
+                        title="Mi Perfil" 
+                        data-bs-content="Desarrollador Web Frontend">
+                    Ver perfil
+                </button>
+
+                <button type="button" 
+                        class="btn btn-success" 
+                        data-bs-toggle="popover" 
+                        data-bs-trigger="hover" 
+                        title="¡Hola!" 
+                        data-bs-content="Pasa el mouse por aquí">
+                    Hover aquí
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Floating Labels Section -->
+<div id="floatingLabels" class="content-section">
+    <h2 class="section-title">BS5 Floating Labels</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Las etiquetas flotantes proporcionan una experiencia de formulario moderna.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Checks and Radios Section -->
+<div id="checksRadios" class="content-section">
+    <h2 class="section-title">BS5 Checks and Radios</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Objetivo del elemento</h4>
+            <p>Checkboxes y radio buttons permiten selección única o múltiple.</p>
+        </div>
+        <div class="col-md-6">
+            <h4>Ejemplo práctico</h4>
+            <div class="example-box">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Checkbox por defecto
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Radio por defecto
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<footer class="bg-light text-center text-lg-start mt-5 border-top">
+    <div class="container p-4">
+      <!-- Información útil -->
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Sobre esta web</h5>
+          <p>
+            Esta página es un ejemplo práctico que explora los elementos más útiles de Bootstrap 5. 
+            ¡Aprende, explora y personaliza para crear sitios increíbles con esta biblioteca!
+          </p>
+        </div>
+  
+        <!-- Enlaces útiles -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Enlaces útiles</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://www.w3schools.com/bootstrap5/" class="text-dark">Documentación Bootstrap</a></li>
+            <li><a href="https://www.tutorialesprogramacionya.com/bootstrap5ya/" class="text-dark">Guías y tutoriales</a></li>
+            <li><a href="https://startbootstrap.com/themes" class="text-dark">Plantillas gratuitas</a></li>
+          </ul>
+        </div>
+  
+        <!-- Redes sociales -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Síguenos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#" class="text-dark"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#" class="text-dark"><i class="fab fa-github"></i> GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="text-center p-3 bg-light border-top">
+      © 2025 Bootstrap Demo
+      
+    </div>
+  </footer>
+  
+</body>
+
+   
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function showSection(target) {
+        document.querySelectorAll('.content-section').forEach(section => {
+            section.classList.remove('active');
+        });
+
+        const targetSection = document.getElementById(target);
+        if (targetSection) {
+            targetSection.classList.add('active');
+            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+
+    document.querySelectorAll('.menu-item').forEach(item => {
+        item.addEventListener('click', (e) => {
+            const target = e.target.getAttribute('data-target');
+            showSection(target);
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        showSection('tables');
+    });
+
+    const menuItems = document.querySelectorAll('.list-group-item');
+
+    menuItems.forEach(item => {
+        item.addEventListener('mouseover', function () {
+            this.style.backgroundColor = '#007bff';
+            this.style.color = '#ffffff';
+        });
+
+        item.addEventListener('mouseout', function () {
+            this.style.backgroundColor = '#f9f9f9';
+            this.style.color = '#333';
+        });
+    });
+</script>
+</script>
+</body>
+</html>
