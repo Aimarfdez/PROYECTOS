@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexión del Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Reflexión sobre el Desarrollo del Portafolio</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Defensa del Proyecto</h3>
+            <p>Este portafolio ha sido desarrollado utilizando <strong>HTML, CSS, JavaScript y Tailwind CSS</strong>. La decisión de usar Tailwind se basó en su facilidad para la personalización y su optimización en rendimiento, lo que permitió un diseño más limpio y modular.Tailwind CSS fue elegido como el framework de estilos principal para el portafolio debido a sus múltiples ventajas en términos de eficiencia, flexibilidad y personalización. A diferencia de otros frameworks como Bootstrap, Tailwind permite crear interfaces modernas sin necesidad de depender de componentes predefinidos, lo que brinda un mayor control sobre el diseño.
+
+                Ventajas de Tailwind en el portafolio:
+                Estilo sin clases predefinidas
+                
+            . A diferencia de Bootstrap, que proporciona componentes ya diseñados, Tailwind utiliza clases utilitarias para personalizar cada elemento de la interfaz sin necesidad de escribir CSS adicional.
+                Optimización del rendimiento
+                
+                Tailwind genera un CSS altamente optimizado, eliminando clases innecesarias con PurgeCSS, lo que reduce significativamente el tamaño del archivo CSS y mejora la velocidad de carga.
+                Mayor productividad
+                
+                Permite diseñar de manera rápida usando clases utilitarias como flex, grid, p-4, text-center, etc., lo que evita escribir estilos CSS personalizados repetitivos.
+                Diseño responsive fácil
+                
+                Gracias a su sistema de sm:, md:, lg: y xl:, es sencillo crear interfaces responsivas sin necesidad de definir media queries manualmente.
+                Modo oscuro y personalización avanzada
+                
+                Tailwind facilita la implementación del modo oscuro y permite personalizar colores, fuentes y otros estilos en el archivo de configuración tailwind.config.js.</p>
+            <p>Uno de los retos principales fue estructurar correctamente los componentes reutilizables y garantizar una experiencia de usuario fluida. Además, se priorizó la accesibilidad para mejorar la inclusión de todos los usuarios.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="./img/portfolio.png" class="img-fluid rounded" alt="Desarrollo Web">
+        </div>
+    </div>
+
+    <h2 class="text-center mt-5">Tecnologías Utilizadas</h2>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-front">HTML & CSS</div>
+                    <div class="card-back">Base estructural del portafolio con un enfoque en diseño adaptable.</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-front">Tailwind CSS</div>
+                    <div class="card-back">Framework de utilidad que permite diseñar interfaces rápidamente y con consistencia.</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-front">JavaScript</div>
+                    <div class="card-back">Utilizado para interactividad, mejorando la experiencia de usuario con efectos dinámicos.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center mt-5">Accesibilidad y Usabilidad</h2>
+    <div class="row text-center">
+        <div class="col-md-6">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-front">Accesibilidad</div>
+                    <div class="card-back">Uso de etiquetas ARIA, alto contraste de colores y navegación optimizada para lectores de pantalla.</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-front">Usabilidad</div>
+                    <div class="card-back">Diseño intuitivo y estructura clara, priorizando la facilidad de navegación y experiencia de usuario.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="conclusion">
+        <h2>Conclusiones y Mejoras Futuras</h2>
+        <p>El desarrollo de este portafolio ha sido un proceso de aprendizaje en constante evolución. Tailwind CSS ha demostrado ser una herramienta eficaz para estilizar componentes de manera rápida y eficiente. En futuras mejoras, se planea optimizar aún más el código, mejorar la carga de la web mediante lazy loading y agregar nuevas funcionalidades interactivas para mejorar la experiencia del usuario.</p>
+    </div>
+</div>
+
+<footer>
+    Made by <strong>@Aimar</strong> | AMF-DEV | <span id="year"></span>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
